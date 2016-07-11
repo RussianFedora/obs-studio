@@ -30,7 +30,7 @@ Requires:	ffmpeg
 Requires:	hicolor-icon-theme
 Requires:	x264
 
-Requires:	%{name}-libs = %{version}-%{release}
+Requires:	%{name}-libs%{?_isa} = %{version}-%{release}
 
 %description
 Open Broadcaster Software is free and open source
@@ -44,7 +44,7 @@ Library files for Open Broadcaster Software
 
 %package devel
 Summary:	Open Broadcaster Software Studio header files
-Requires:	%{name}-libs = %{version}-%{release}
+Requires:	%{name}-libs%{?_isa} = %{version}-%{release}
 
 %description devel
 Header files for Open Broadcaster Software
