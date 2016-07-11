@@ -54,7 +54,7 @@ Header files for Open Broadcaster Software
 
 %build
 export CPPFLAGS=-DFFMPEG_MUX_FIXED="%{_libexecdir}/obs-plugins/obs-ffmpeg/ffmpeg-mux"
-%cmake -DCMAKE_INSTALL_PREFIX=/usr \
+%cmake \
 %ifarch x86_64
       -DOBS_MULTIARCH_SUFFIX=64 \
 %endif
