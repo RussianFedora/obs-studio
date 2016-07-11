@@ -64,11 +64,13 @@ make %{?_smp_mflags}
 
 %install
 %make_install
-desktop-file-validate %{buildroot}%{_datadir}/applications/obs.desktop
 
 mkdir -p %{buildroot}/%{_libexecdir}/obs-plugins/obs-ffmpeg/
 mv -f %{buildroot}/%{_datadir}/obs/obs-plugins/obs-ffmpeg/ffmpeg-mux %{buildroot}/%{_libexecdir}/obs-plugins/obs-ffmpeg/ffmpeg-mux
 ln -sf %{_libexecdir}/obs-plugins/obs-ffmpeg/ffmpeg-mux %{buildroot}/%{_datadir}/obs/obs-plugins/obs-ffmpeg/ffmpeg-mux
+
+%check
+desktop-file-validate %{buildroot}%{_datadir}/applications/obs.desktop
 
 %post
 update-desktop-database >&/dev/null || :
