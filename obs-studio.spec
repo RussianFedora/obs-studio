@@ -8,6 +8,7 @@ URL:		https://obsproject.com/
 Source0:	https://github.com/jp9000/obs-studio/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
 BuildRequires:	cmake
+BuildRequires:	dbus-devel
 BuildRequires:	ffmpeg-devel
 BuildRequires:	fontconfig-devel
 BuildRequires:	freetype-devel
