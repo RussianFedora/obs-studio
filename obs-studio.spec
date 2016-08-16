@@ -1,6 +1,6 @@
 Summary:	Open Broadcaster Software Studio
 Name:		obs-studio
-Version:	0.15.0
+Version:	0.15.4
 Release:	1%{?dist}
 
 License:	GPLv2+ 
@@ -114,6 +114,9 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor >&/dev/null || :
 %{_libdir}/cmake/LibObs
 
 %changelog
+* Tue Aug 16 2016 Arkady L. Shane <ashejn@russianfedora.pro> - 0.15.4-1
+- update to 0.15.4
+
 * Mon Jul 11 2016 Arkady L. Shane <ashejn@russianfedora.pro> - 0.15.0-1
 - update to 0.15.0
 
